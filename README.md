@@ -1,10 +1,10 @@
 Hello and welcome to my pokedex app! I hope you enjoy using it.
 Instructions for usage:
-The data used in this program is stored a local MySql database, so please have mysql running locally 
+The data used in this program is stored a local MySql database, so please have MySql running locally 
 before getting started.
 You'll also need to set up a virtual environment to run the packages required for the app to run. 
 To do so, run 'python -m venv {NAMEOFENV}', then for mac users run 'source {NAMEOFENV}/bin/activate' and for windows users
-run {NAMEOFENV}/Scripts/activate. Then once you have your virtual environment up and running, run
+run '{NAMEOFENV}/Scripts/activate'. Then once you have your virtual environment up and running, run
 'pip install requirements.txt' to install the required packages inside your local environment.
 The password variable in the 'sql.py' script will have to be set to the password for your local mysql server. Mine is stored
 in an environment variable then loaded using the os and dotenv libraries. Not the most important security step to make

@@ -49,9 +49,6 @@ async def getter(client):
     items.append(item)
     q.task_done()
 
-async def get_sprites():
-    url = await q.get()
-    data = await get_json(client, url)
 
 async def retrieve_items(client, queue, producer, consumer, urls):
     producers = asyncio.create_task(producer(queue, urls))
